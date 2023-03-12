@@ -1,0 +1,74 @@
+<html>
+<head>
+<script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+<script>
+$(document).ready(function(){
+$(".b1").click(function(){
+var a=$(".c1").val();
+var b=$(".c2").val();
+if(a==""){
+alert("PLS INPUT YOUR EMAIL");
+}
+else if(b==""){
+alert("PLS INPUT YOUR PASSWORD");
+}
+else{
+alert("SUCCESSFULL");
+}
+});
+});
+</script>
+<style>
+div{
+border-style:solid;
+border-color:black;
+border-width:4px;
+width:275px;
+height:275px;
+margin-top:200px;
+background-color:SandyBrown;
+}
+input,button{
+border-style:solid;
+border-color:DodgerBlue;
+border-width:4px;
+}
+input:hover{
+background-color:LightSteelBlue;
+}
+button:hover{
+background-color:LightSteelBlue;
+}
+body{
+background-color:MediumAquaMarine;
+}
+</style>
+</head>
+<body>
+<center>
+<div>
+<h2><u>FORM</u></h2>
+<form name="signup">
+<label><b><u>EMAIL:</b></u></label>
+<br>
+<input type="text" class="c1" name="email">
+<br>
+<br>
+<label><b><u>PASSWORD:</b></u></label>
+<br>
+
+<input type="password" class="c2" name="password">
+<br>
+<br>
+<br>
+<button class="b1">SUBMIT</button>
+<button>CANCEL</button>
+
+</form>
+</center>
+</div>
+</body>
+</html>
